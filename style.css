@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 154, 202);
+}
+.product{
+    margin:40px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   max-width: fit-content;
+}
+.images{
+    flex-basis: 47%;
+    height:fit-content;
+    background-color: #fff;
+     transform: scaley(1.1);
+}
+.images img{
+    height: 400px;
+    width: 410px;
+    background-size: cover;
+}
+.details{
+    flex-basis: 53%;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px rgba(14, 16, 16, 0.2)  ;
+}
+.details h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.details h2{
+ margin-top: 10px;
+ font-size: 2rem;
+}
+.details h3{
+    color: rgb(0, 200, 255);
+    margin-top: 5px;
+    font-weight: bold;
+}
+.details p{
+    font-size: large;
+    width: 350px;
+}
+.select-size {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.select-size p{
+    width: 70px;
+}
+.select-size input:checked + span{
+  color: rgb(255, 0, 85);
+  font-weight: 600;
+}
+.select-size input,.select-color input{
+    display: none;
+}
+.select-size span{
+    display: inline;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.select-color{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.select-color span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.select-color p{
+    width: 80px;
+}
+.clr-1{
+    background-color: red;
+}
+.clr-2{
+    background-color: blue;
+}
+.clr-3{
+    background-color: green;
+}
+.clr-4 {
+    background-color: grey;
+    
+}
+.select-color input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0px 0px 0px 4px #fff,0 0 0 6px #000;
+}
+
+.select-quantity{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+.select-quantity p{
+    width: 80px;
+}
+.select-quantity input{
+    width: 70px;
+    margin-left: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 20px;
+    background-color: #9288885f;
+    padding: 0 10px;
+}
+.buy-now{
+    margin-top: 40px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(0, 98, 255);
+    color:white ;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgb(85, 63, 240, 0.25);
+}
+.controls{
+  padding: 10px ;
+}
+.controls img{
+    height: 80px ;
+    width: 80px;
+    margin-left: 10px;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
